@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Costa | Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <a href="#" class="nav-logo" aria-label="Home">
+                <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                <span class="nav-logo-text">Pedro Costa</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#experiencia" data-lang="pt">Experiência</a><a href="#experiencia" data-lang="en">Experience</a></li>
+                <li><a href="#educacao" data-lang="pt">Educação</a><a href="#educacao" data-lang="en">Education</a></li>
+                <li><a href="#skills" data-lang="pt">Skills</a><a href="#skills" data-lang="en">Skills</a></li>
+            </ul>
+        </div>
+        <div class="controls-group">
+            <button class="lang-toggle" id="lang-btn" title="Mudar idioma / Change language">
+                <i class="fas fa-globe control-icon"></i>
+                <span id="lang-text">EN</span>
+            </button>
+            <button class="theme-toggle" id="theme-btn" title="Mudar tema / Change theme">
+                <i class="fas fa-moon control-icon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-pic">
+                <img src="assets/foto-perfil.png" alt="Pedro Costa">
+            </div>
+            <h1>Pedro Costa</h1>
+            <p class="subtitle" data-lang="pt">Engenheiro de Software</p>
+            <p class="subtitle" data-lang="en">Software Engineer</p>
+            <p class="hero-bio" data-lang="pt">Depois de concluir a licenciatura em Gestão e adquirir experiência profissional, percebi que era na área da tecnologia e desenvolvimento de software que queria construir o meu futuro. Isso levou-me a regressar à faculdade e tirar uma segunda licenciatura em Engenharia Informática, onde encontrei a área em que realmente me sinto realizado profissionalmente.</p>
+            <p class="hero-bio" data-lang="en">After completing my degree in Management and gaining professional experience, I realized that technology and software development was my true calling. This led me to return to university and pursue a second degree in Computer Engineering, where I found my professional fulfillment.</p>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Experiência -->
+        <section id="experiencia">
+            <h2><i class="fas fa-briefcase"></i> <span data-lang="pt">Experiência Profissional</span><span data-lang="en">Professional Experience</span></h2>
+
+            <!-- Layer8 -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Software Engineer</div>
+                        <div class="exp-company">
+                            <img class="org-logo" src="assets/layer8.png" alt="Layer8 logo">
+                            <span>Layer8</span>
+                        </div>
+                    </div>
+                    <span class="exp-date">Dec 2025 - Present</span>
+                </div>
+                <ul class="exp-bullets" data-lang="pt">
+                    <li>Arquitetura e desenvolvimento full-stack (Node.js, Angular, PostgreSQL) de uma web application para gestão de Use Cases e centralização da informação dispersa por vários documentos, com impacto direto na otimização do acesso à informação e na gestão diária da equipa.</li>
+                    <li>Criação de automações em Node-RED com resolução automática de mais de 100 tickets de Jira por mês, o que permitiu libertar horas de análise manual aos analistas de segurança.</li>
+                    <li>Implementação de raiz de pipelines CI/CD e Docker para acelerar a entrega de código, assumindo também as decisões técnicas de arquitetura e segurança.</li>
+                </ul>
+                <ul class="exp-bullets" data-lang="en">
+                    <li>Architecture and full-stack development (Node.js, Angular, PostgreSQL) of a web application for Use Case management and centralization of information spread across multiple documents, with direct impact on optimizing access to information and the team's daily management.</li>
+                    <li>Creation of Node-RED automations with automatic resolution of more than 100 Jira tickets per month, which freed up hours of manual analysis for security analysts.</li>
+                    <li>From-scratch implementation of CI/CD pipelines and Docker to accelerate code delivery, while also taking ownership of architecture and security technical decisions.</li>
+                </ul>
+            </div>
+
+            <!-- Amorim -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title" data-lang="pt">Técnico de Logística e Compras</div>
+                        <div class="exp-title" data-lang="en">Logistics & Procurement Technician</div>
+                        <div class="exp-company">
+                            <img class="org-logo" src="assets/amorim.png" alt="Amorim Cork Composites logo">
+                            <span>Amorim Cork Composites</span>
+                        </div>
+                    </div>
+                    <span class="exp-date">Jun 2022 - Oct 2022</span>
+                </div>
+                <ul class="exp-bullets" data-lang="pt">
+                    <li>Coordenação de expedições aéreas e marítimas para os EUA, com o envio de mais de 10 contentores por mês, para garantir a ocupação eficiente das mercadorias e a redução dos custos de transporte.</li>
+                    <li>Gestão de armazém e compras a fornecedores, para evitar quebras de stock e garantir a operação contínua da produção.</li>
+                </ul>
+                <ul class="exp-bullets" data-lang="en">
+                    <li>Coordination of air and sea shipments to the USA, with more than 10 containers shipped per month, to ensure efficient cargo utilization and reduce transport costs.</li>
+                    <li>Warehouse management and supplier procurement to prevent stockouts and ensure continuous production operations.</li>
+                </ul>
+            </div>
+
+            <!-- Fidelidade -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title" data-lang="pt">Assistente de Mediação de Seguros</div>
+                        <div class="exp-title" data-lang="en">Insurance Mediation Assistant</div>
+                        <div class="exp-company">
+                            <img class="org-logo" src="assets/fidelidade.png" alt="Fidelidade logo">
+                            <span>Fidelidade</span>
+                        </div>
+                    </div>
+                    <span class="exp-date">Jun 2020 - May 2021</span>
+                </div>
+                <ul class="exp-bullets" data-lang="pt">
+                    <li>Mediação de seguros e venda proativa (angariação e cross-selling), de forma a atingir as metas comerciais estipuladas para os vários ramos.</li>
+                    <li>Gestão de carteira avaliada em mais de 1M€, assegurando a renovação de apólices e a fidelização dos clientes (cobranças e retenção).</li>
+                </ul>
+                <ul class="exp-bullets" data-lang="en">
+                    <li>Insurance mediation and proactive sales (lead generation and cross-selling), in order to meet the commercial targets defined for the different business lines.</li>
+                    <li>Management of a portfolio valued at more than €1M, ensuring policy renewals and customer loyalty (collections and retention).</li>
+                </ul>
+            </div>
+
+            <!-- Sportzone -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title" data-lang="pt">Vendedor</div>
+                        <div class="exp-title" data-lang="en">Sales Associate</div>
+                        <div class="exp-company">
+                            <img class="org-logo" src="assets/sportzone.png" alt="Sportzone logo">
+                            <span>Sportzone</span>
+                        </div>
+                    </div>
+                    <span class="exp-date">Nov 2019 - Jul 2020</span>
+                </div>
+                <ul class="exp-bullets" data-lang="pt">
+                    <li>Vendas e apoio ao cliente na área de calçado, reposição de stock e organização do armazém, contribuindo para a concretização dos objetivos de venda e para a qualidade do atendimento.</li>
+                </ul>
+                <ul class="exp-bullets" data-lang="en">
+                    <li>Sales and customer support in the footwear area, stock replenishment and warehouse organization, contributing to the achievement of sales goals and service quality.</li>
+                </ul>
+            </div>
+
+            <!-- Escriturário -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title" data-lang="pt">Escriturário</div>
+                        <div class="exp-title" data-lang="en">Administrative Assistant</div>
+                        <div class="exp-company long-company">
+                            <img class="org-logo" src="assets/antonio_rui.png" alt="ARTL logo">
+                            <span>ARTL, Lda & Carpintaria António Lei Unipessoal, Lda</span>
+                        </div>
+                    </div>
+                    <span class="exp-date">Aug 2017 - Nov 2019</span>
+                </div>
+                <ul class="exp-bullets" data-lang="pt">
+                    <li>Gestão administrativa, elaboração de orçamentos e contato com fornecedores para garantir a organização diária e a verificação dos custos reais de cada projeto.</li>
+                </ul>
+                <ul class="exp-bullets" data-lang="en">
+                    <li>Administrative management, budget preparation and contact with suppliers to ensure daily organization and verification of actual costs for each project.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Educação -->
+        <section id="educacao">
+            <h2><i class="fas fa-graduation-cap"></i> <span data-lang="pt">Educação</span><span data-lang="en">Education</span></h2>
+
+            <div class="edu-item">
+                <i class="fas fa-certificate edu-icon"></i>
+                <div class="edu-content">
+                    <div class="edu-degree" data-lang="pt">Licenciatura em Engenharia Informática</div>
+                    <div class="edu-degree" data-lang="en">Bachelor's Degree in Computer Engineering</div>
+                    <div class="edu-school">
+                        <img class="org-logo edu-logo" src="assets/isep.png" alt="ISEP logo">
+                        <span>Instituto Superior de Engenharia do Porto (ISEP)</span>
+                    </div>
+                    <div class="edu-year">Sep 2023 - Present</div>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <i class="fas fa-certificate edu-icon"></i>
+                <div class="edu-content">
+                    <div class="edu-degree" data-lang="pt">Licenciatura em Gestão</div>
+                    <div class="edu-degree" data-lang="en">Bachelor's Degree in Management</div>
+                    <div class="edu-school">
+                        <img class="org-logo edu-logo" src="assets/universidade_aveiro.png" alt="Universidade de Aveiro logo">
+                        <span>Universidade de Aveiro</span>
+                    </div>
+                    <div class="edu-year">Sep 2013 - Aug 2017</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2><i class="fas fa-cogs"></i> <span data-lang="pt">Competências Técnicas</span><span data-lang="en">Technical Skills</span></h2>
+
+            <div class="skill-section">
+                <h3 data-lang="pt">Linguagens</h3>
+                <h3 data-lang="en">Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Java</div>
+                    <div class="skill-item">TypeScript</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">C</div>
+                    <div class="skill-item">C#</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h3 data-lang="pt">Frameworks & Engines</h3>
+                <h3 data-lang="en">Frameworks & Engines</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">NestJS</div>
+                    <div class="skill-item">Angular</div>
+                    <div class="skill-item">.NET</div>
+                    <div class="skill-item">Entity Framework</div>
+                    <div class="skill-item">Prisma ORM</div>
+                    <div class="skill-item">Mongoose</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h3 data-lang="pt">Bases de Dados</h3>
+                <h3 data-lang="en">Databases</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">PostgreSQL</div>
+                    <div class="skill-item">MongoDB</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">Redis</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h3 data-lang="pt">DevOps & Ferramentas</h3>
+                <h3 data-lang="en">DevOps & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Docker</div>
+                    <div class="skill-item">CI/CD</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">Node-RED</div>
+                    <div class="skill-item">Linux</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <h3 data-lang="pt" style="margin-bottom: 1rem;">Competências Pessoais</h3>
+                <h3 data-lang="en" style="margin-bottom: 1rem;">Soft Skills</h3>
+                <ul class="soft-skills-list" data-lang="pt">
+                    <li>Resolução de problemas</li>
+                    <li>Atenção ao detalhe</li>
+                    <li>Trabalho em equipa</li>
+                    <li>Pensamento crítico</li>
+                    <li>Organização</li>
+                    <li>Responsabilidade</li>
+                    <li>Gestão de prioridades</li>
+                    <li>Aprendizagem contínua</li>
+                    <li>Proatividade</li>
+                </ul>
+                <ul class="soft-skills-list" data-lang="en">
+                    <li>Problem solving</li>
+                    <li>Attention to detail</li>
+                    <li>Teamwork</li>
+                    <li>Critical thinking</li>
+                    <li>Organization</li>
+                    <li>Responsibility</li>
+                    <li>Priority management</li>
+                    <li>Continuous learning</li>
+                    <li>Proactivity</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2><i class="fas fa-link"></i> <span data-lang="pt">Links</span><span data-lang="en">Links</span></h2>
+            <p data-lang="pt">Conecta-te comigo para discussões sobre projetos, tecnologia e inovação.</p>
+            <p data-lang="en">Connect with me to discuss projects, technology and innovation.</p>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/pedro-costa-eng" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/mainpedrocosta" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://tryhackme.com/p/Zneeky" target="_blank" class="contact-link">
+                    <i class="fas fa-shield-alt"></i> TryHackMe
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p data-lang="pt">&copy; 2026 Pedro Costa</p>
+        <p data-lang="en">&copy; 2026 Pedro Costa</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
