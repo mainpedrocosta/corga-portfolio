@@ -18,6 +18,7 @@ function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;
+    translateDates(lang);
 }
 
 function setTheme(theme) {
@@ -61,3 +62,35 @@ if (currentTheme === 'dark') {
 }
 
 toggleBackToTop();
+
+// Translate month abbreviations and "Present"/"Presente"
+function translateDates(lang) {
+    const enToPt = {
+        Jan: 'jan', Feb: 'fev', Mar: 'mar', Apr: 'abr', May: 'mai', Jun: 'jun', Jul: 'jul', Aug: 'ago', Sep: 'set', Oct: 'out', Nov: 'nov', Dec: 'dez'
+    };
+    const ptToEn = Object.fromEntries(Object.entries(enToPt).map(([k,v]) => [v, k]));
+
+    const els = document.querySelectorAll('.exp-date, .edu-year');
+    els.forEach(el => {
+        // store original if missing
+        if (!el.dataset.original) el.dataset.original = el.textContent;
+        let text = el.dataset.original;
+        if (lang === 'pt') {
+            Object.keys(enToPt).forEach(en => {
+                const re = new RegExp('\\b' + en + '\\b', 'g');
+                text = text.replace(re, enToPt[en]);
+            });
+            text = text.replace(/Present/g, 'Presente');
+        } else {
+            Object.keys(ptToEn).forEach(pt => {
+                const re = new RegExp('\\b' + pt + '\\b', 'g');
+                text = text.replace(re, ptToEn[pt]);
+            });
+            text = text.replace(/Presente/g, 'Present');
+        }
+        el.textContent = text;
+    });
+}
+
+// ensure dates reflect the initial language
+translateDates(currentLang);
